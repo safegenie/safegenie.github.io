@@ -1,317 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SafeGenie</title>
-  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    SafeGenie | Your Virtual Construction Safety Guardian
+  </title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="assets/css/macbook.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RT4QG0FV9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4RT4QG0FV9');
+  </script>
+
+  <!-- ==== WOW JS ==== -->
+  <script src="assets/js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RT4QG0FV9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<body>
+  <!-- ====== Navbar Section Start -->
+  <div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
+    <div class="container">
+      <div class="relative -mx-4 flex items-center justify-between">
+        <div class="w-60 max-w-full px-4">
+          <a href="index.html" class="navbar-logo block w-full py-5">
+            <img src="assets/images/logo/logo-white.svg" alt="logo" class="header-logo w-full" />
+          </a>
+        </div>
+        <div class="flex w-full items-center justify-between px-4">
+          <div>
+            <button id="navbarToggler"
+              class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+            </button>
+            <nav id="navbarCollapse"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6">
+              <ul class="blcok lg:flex">
+                <li class="group relative">
+                  <a href="#home"
+                    class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
+                    Home
+                  </a>
+                </li>
+                <li class="group relative">
+                  <a href="#about"
+                    class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12">
+                    About
+                  </a>
+                </li>
+                <li class="group relative">
+                  <a href="#team"
+                    class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12">
+                    Team
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Navbar Section End -->
 
-  gtag('config', 'G-4RT4QG0FV9');
-</script>
+  <!-- ====== Hero Section Start -->
+  <div id="home" class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]">
+    <div class="container">
+      <div class="-mx-4 flex flex-wrap items-center">
+        <div class="w-full px-4">
+          <div class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
+            <h1
+              class="mb-8 text-3xl leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug">
+              <span class="font-light">Safe</span><span class="font-bold ">Genie</span>
+            </h1>
+            <p
+              class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed">
+              Your Virtual Construction Safety Guardian.<br />
+              We are here to help you with your safety needs.
+            </p>
+          </div>
+        </div>
 
-<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
-  <div class="site-wrapper overflow-hidden position-relative">
-    <!--Site Header Area -->
-    <header
-      class="site-header site-header--menu-center dark-mode-texts landing-17-menu  site-header--absolute site-header--sticky">
-      <div class="container">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="#">
-              <!-- light version logo (logo must be black)-->
-              <img src="image/logo/logo-dark-lg.png" alt="" class="light-version-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="image/logo/logo-white-lg.png" alt="" class="dark-version-logo">
+        <div class="w-full px-4">
+          <div class="wow fadeInUp relative z-10 mx-auto max-w-[845px]" data-wow-delay=".25s">
+            <div class="mt-16">
+              <video controls autoplay>
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="absolute bottom-0 -left-9 z-[-1]">
+              <img src="assets/images/hero/bottom.svg">
+            </div>
+            <div class="absolute -top-6 -right-6 z-[-1]">
+              <img src="assets/images/hero/top.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====== Hero Section End -->
+
+  <!-- ====== Features Section Start -->
+  <section class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
+    <div class="container">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mb-12 max-w-[620px] lg:mb-20">
+            <span class="mb-2 block text-lg font-semibold text-primary">
+              Features
+            </span>
+            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]">
+              Our Values
+            </h2>
+            <p class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">
+              SafeGenie is a construction safety technology company that leverages AI-based real-time vision
+              intelligence to detect safety hazards.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".1s">
+            <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+              <img style="padding:10px" src="assets/icons/life-jacket.svg" />
+              <!-- <svg width="35" height="35" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44.9313 11.7H38.9188C40.5438 10.9687 41.7626 9.99374 42.2501 8.69374C42.9001 6.98749 42.2501 5.19999 40.3001 3.33124C38.1876 1.29999 35.9938 0.568738 33.8001 1.13749C29.9813 2.11249 27.4626 7.06874 26.2438 9.99374C25.1063 7.06874 22.5876 2.11249 18.6876 1.13749C16.4938 0.568738 14.3001 1.29999 12.1876 3.33124C10.2376 5.19999 9.5876 6.98749 10.2376 8.69374C10.7251 9.99374 12.0251 10.9687 13.5688 11.7H7.06885C5.0376 11.7 3.4126 13.325 3.4126 15.3562V21.5312C3.4126 23.5625 5.0376 25.1875 7.06885 25.1875H7.71885V46.2312C7.71885 48.8312 9.83135 51.025 12.5126 51.025H40.1376C42.7376 51.025 44.9313 48.9125 44.9313 46.2312V25.1875C46.9626 25.1875 48.5876 23.5625 48.5876 21.5312V15.3562C48.5063 13.325 46.8813 11.7 44.9313 11.7ZM34.5313 3.98124C34.7751 3.89999 35.0188 3.89999 35.1813 3.89999C36.1563 3.89999 37.2126 4.38749 38.2688 5.52499C38.7563 6.01249 39.8126 7.06874 39.5688 7.79999C39.0001 9.34374 33.9626 10.6437 28.9251 11.05C30.0626 8.36874 32.1751 4.54999 34.5313 3.98124ZM13.0001 7.71874C12.7563 6.98749 13.8126 5.93124 14.3001 5.44374C15.4376 4.38749 16.4126 3.81874 17.3876 3.81874C17.6313 3.81874 17.8751 3.81874 18.0376 3.89999C20.4751 4.54999 22.5063 8.28749 23.6438 10.9687C18.6063 10.5625 13.5688 9.26249 13.0001 7.71874ZM42.0063 46.2312C42.0063 47.2875 41.1126 48.1812 40.0563 48.1812H12.4313C11.3751 48.1812 10.4813 47.2875 10.4813 46.2312V25.1875H41.9251V46.2312H42.0063ZM45.6626 21.5312C45.6626 22.0187 45.3376 22.3437 44.8501 22.3437H7.06885C6.6626 22.3437 6.25635 22.0187 6.25635 21.5312V15.3562C6.25635 14.95 6.6626 14.5437 7.06885 14.5437H44.8501C45.2563 14.5437 45.6626 14.8687 45.6626 15.3562V21.5312Z"
+                  fill="white" />
+              </svg> -->
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              Save Lives
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              Detect safety hazards and receive real-time alerts so that accidents can be prevented before they happen
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".15s">
+            <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+              <img style="padding:10px" src="assets/icons/save-money.svg" />
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              Save Costs
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              Lower direct and indirect costs associated with safety incidents and improve your project margin
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="wow fadeInUp group mb-12 bg-white" data-wow-delay=".2s">
+            <div class="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
+              <span
+                class="absolute top-0 left-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+              <img style="padding:10px" src="assets/icons/work-site.svg" />
+            </div>
+            <h4 class="mb-3 text-xl font-bold text-dark">
+              Save Effort
+            </h4>
+            <p class="mb-8 text-body-color lg:mb-11">
+              Manage safety with ease through auto-generated hazard reports and predictive risk analytics
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Features Section End -->
+
+  <!-- ====== About Section Start -->
+  <section id="about" class="bg-[#f3f4fe] pt-8 pb-8 lg:pt-[120px] lg:pb-[120px]">
+
+    <div class="container py-4">
+      <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="w-full items-center justify-between overflow-hidden border lg:flex p-6">
+              <div
+                class="sm:w-full md:w-1/2 lg:w-1/2 py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]">
+                <h2 class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]">
+                  Protect workers from hazards in real time
+                </h2>
+                <p class="mb-9 text-base leading-relaxed text-body-color">
+                  SafeGenie automatically detects safety hazards and sends real-time alerts to prevent incidents from
+                  happening.
+                </p>
+              </div>
+              <div class="sm:w-full md:w-1/2 lg:w-1/2 text-center px-4">
+                <div class="macbook">
+                  <div class="screen">
+                    <div class="viewport" style="background-image:url('assets/images/ui/ui-2.png');">
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                  <div class="notch"></div>
+                </div>
+                <!-- <div class="relative z-10 inline-block ">
+                  <img src="assets/images/ui/ui-2.png" alt="image" class="mx-auto lg:ml-auto" />
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="w-full items-center justify-between overflow-hidden border lg:flex p-6">
+              <div
+                class="sm:w-full md:w-1/2 lg:w-1/2 py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]">
+                <h2 class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]">
+                  Uncover safety insights like never before
+                </h2>
+                <p class="mb-9 text-base leading-relaxed text-body-color">
+                  In the backend, SafeGenie helps you understand and benchmark safety data and predict where risks can
+                  be in the future.
+                </p>
+              </div>
+              <div class="sm:w-full md:w-1/2 lg:w-1/2 text-center px-4">
+                <div class="relative z-10 inline-block ">
+                  <img src="assets/images/ui/fall-hazard.jpg" alt="fall hazard" class="mx-auto lg:ml-auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="w-full items-center justify-between overflow-hidden border lg:flex p-6">
+              <div
+                class="sm:w-full md:w-1/2 lg:w-1/2 py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]">
+                <h2 class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]">
+                  Place our 360 cameras where it matters
+                </h2>
+                <p class="mb-9 text-base leading-relaxed text-body-color">
+                  Place our detachable cameras anywhere you want to monitor. They are easy to install and can be moved
+                  around as needed.
+                  Our backend will analyze the position of each to give you the best safety insights.
+                </p>
+              </div>
+              <div class="sm:w-full md:w-1/2 lg:w-1/2 text-center px-4">
+                <div class="macbook">
+                  <div class="screen">
+                    <div class="viewport" style="background-image:url('assets/images/ui/ui-6.png');">
+                    </div>
+                  </div>
+                  <div class="base"></div>
+                  <div class="notch"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="w-full items-center justify-between overflow-hidden border lg:flex p-6">
+              <div
+                class="sm:w-full md:w-1/2 lg:w-1/2 py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]">
+                <h2 class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]">
+                  Reposition detachable cameras with ease
+                </h2>
+                <p class="mb-9 text-base leading-relaxed text-body-color">
+                  To ensure high coverage as construction progresses, simply plug the cameras in any lamp socket or use
+                  our adaptors to attach to a convenient location
+                </p>
+              </div>
+              <div class="sm:w-full md:w-1/2 lg:w-1/2 text-center px-4">
+                <div class="relative z-10 inline-block">
+                  <img src="assets/images/product/cam-simple.png" alt="Repositionable Camera" class="mx-auto lg:ml-auto"
+                    style="height: 350px;" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== About Section End -->
+
+  <!-- Sponsors -->
+  <div class="flex flex-wrap pt-12">
+    <div class="mx-4 w-full">
+      <div class="wow fadeInUp" data-wow-delay=".2s">
+        <div class="flex flex-wrap items-center">
+          <div class="flex mx-auto max-w-[250px] sm:p-4">
+            <a href="https://entrepreneurship.mit.edu" target="_blank" rel="nofollow noopner">
+              <img src="assets/images/brands/MTC.png" alt="Martin Trust Center for Entrepreneurship at MIT"
+                class="grayscale duration-300 hover:filter-none" />
             </a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- navbar- -->
-    <!-- Hero Area -->
-    <div class="hero-area-l-17 position-relative">
-      <div class="container">
-        <div class="row position-relative justify-content-center">
-          <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 order-lg-1 order-1" data-aos="fade-right"
-            data-aos-duration="800" data-aos-once="true">
-            <div class="content text-center">
-              <h1>SafeGenie</h1>
-              <h2>Your Virtual Construction Safety Guardian </h2>
-            </div>
+          <div class="flex mx-auto max-w-[250px] sm:p-4">
+            <a href="https://innovationlabs.harvard.edu" target="_blank" rel="nofollow noopner">
+              <img src="assets/images/brands/ilab.jpg" alt="Harvard innovation labs"
+                class="grayscale duration-300 hover:filter-none" />
+            </a>
           </div>
-          <div class="col-xl-8 col-lg-9 order-lg-1 order-0">
-            <div class="hero-area-image">
-              <img src="image/ui/ui-2.png" alt="" class="w-100">
-            </div>
+          <div class="flex mx-auto max-w-[250px] sm:p-4">
+            <a href="https://www.hbs.edu" target="_blank" rel="nofollow noopner">
+              <img src="assets/images/brands/hbs.png" alt="Harvard Business School"
+                class="grayscale duration-300 hover:filter-none" />
+            </a>
+          </div>
+          <div class="flex max-auto max-w-[250px] sm:p-4">
+            <a href="https://www.mit.edu" target="_blank" rel="nofollow noopner">
+              <img src="assets/images/brands/mit_logo.png" alt="MIT" class="grayscale duration-300 hover:filter-none" />
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!--Feature Area -->
-    <div class="feature-area-l-17 position-relative">
-      <div class="container">
-        <div class="row feature-area-l-17-items justify-content-center text-center">
-          <div class="col-lg-4 col-md-6 col-sm-9">
-            <div class="single-features single-border position-relative">
-              <div class="circle-dot-1">
-                <i class="fas fa-circle"></i>
-              </div>
-              <h4>Save Lives</h4>
-              <p>
-                Detect safety hazards and receive real-time alerts so that accidents can be prevented before they happen
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-9">
-            <div class="single-features single-border position-relative">
-              <div class="circle-dot-2">
-                <i class="fas fa-circle"></i>
-              </div>
-              <h4>Save Costs</h4>
-              <p>
-                Lower direct and indirect costs associated with safety incidents and improve your project margin
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-9">
-            <div class="single-features">
-              <div class="circle-dot-3">
-                <i class="fas fa-circle"></i>
-              </div>
-              <h4>Save Effort</h4>
-              <p>
-                Manage safety with ease through auto-generated hazard reports and predictive risk analytics
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Content Area 1-->
-    <div class="content-area-l-17-1">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xl-10 col-lg-12">
-            <div class="row align-items-center justify-content-center">
-              <div class="offset-xxl-1 col-xxl-5 col-xl-6 col-lg-6 col-md-8" data-aos="fade-right"
-                data-aos-duration="800" data-aos-once="true">
-                <div class="content section-heading-11">
-                  <h2>Protect workers from hazards in real time</h2>
-                  <p>
-                    SafeGenie automatically detects safety hazards and sends real-time alerts to prevent incidents from happening</p>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-8" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-                <div class="content-img position-relative">
-                  <!-- <div class="image-1">
-                    <img src="image/ui/ui-2.png" alt="">
-                  </div> -->
-                  <div class="image-2">
-                    <img src="image/ui/ui-3.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Content Area 2-->
-    <div class="content-area-l-17-1">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xl-10 col-lg-12">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 col-md-8" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                <div class="content-img position-relative">
-                  <div class="image-1">
-                    <img src="image/ui/ui-1.png" alt="">
-                  </div>
-                  <!-- <div class="image-2">
-                    <img src="image/ui/ui-1.png" alt="">
-                  </div> -->
-                </div>
-              </div>
-              <div class="offset-xxl-1 col-xxl-5 col-xl-6 col-lg-6 col-md-8" data-aos="fade-left"
-                data-aos-duration="800" data-aos-once="true">
-                <div class="content section-heading-11">
-                  <h2>Uncover safety insights like never before</h2>
-                  <p>
-                    In the backend, SafeGenie helps you understand and benchmark safety data and predict where risks can be in the future
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Content Area 3-->
-    <div class="content-area-l-17-2">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xl-10 col-lg-12">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-8 order-lg-1 order-1" data-aos="fade-left"
-                data-aos-duration="800" data-aos-once="true">
-                <div class="content section-heading-11">
-                  <h2>Reposition detachable cameras with ease</h2>
-                  <p>To ensure high coverage as construction progresses, simply plug the cameras in any lamp socket or use our adaptors to attach to a convenient location</p>
-                </div>
-              </div>
-              <div class="offset-xxl-1 col-xxl-6 col-xl-6 col-lg-6 col-md-8 order-lg-1 order-0" data-aos="fade-right"
-                data-aos-duration="800" data-aos-once="true">
-                <div class="content-img position-relative noborder">
-                  <div class="image-1">
-                    <img src="image/camera/cam-simple.png" alt="">
-                  </div>
-                  <!-- <div class="image-2">
-                    <img src="image/camera/cam-mount.png" alt="">
-                  </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Video Area-->
-    <div class="video-area-l-17">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-12">
-            <div class="video-content text-center">
-              <h2>We help you make jobsites safer, smarter, and more productive</h2>
-              <!-- <p></p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Team Simple Area-->
-    <div class="content-area-l-17-2">
-      <div class="container">
-        <div class="row  text-center">
-          <h2>Expert team on AI-based safety systems</h2>
-        </div>
-        <div class="row text-center">
-          <div class=" col-md-3 col-sm-3 mb-3 ">
-            <div class="list-inline-item affiliation">
-              <img src="image/logo/ilab.jpg" class="img-fluid" alt="Harvard iLab">
-            </div>
-          </div> 
-          <div class=" col-md-3 col-sm-3 mb-3 ">
-            <div class="list-inline-item affiliation">
-              <img src="image/logo/mit_logo.png" class="img-fluid" alt="MIT">
-            </div>
-          </div>
-          <div class=" col-md-3 col-sm-3 mb-3 ">
-            <div class="list-inline-item affiliation">
-              <img src="image/logo/ponyai.png" class="img-fluid" alt="ponyai">
-            </div>
-          </div>
-          <div class=" col-md-3 col-sm-3 mb-3 ">
-            <div class="list-inline-item affiliation">
-              <img src="image/logo/nvidia.png" class="img-fluid" alt="nvidia">
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>   
-    <!--Team Area-->
-    <div class="content-area-l-17-2">
-      <div class="container">
-        <div class="row  text-center">
-          <h2>Expert team on AI-based safety systems</h2>
-        </div>
-        <div class="row text-center">
-          <div class=" col-xl-6 col-sm-6 mb-4 ">
-            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="image/avatar/yi.jpg" alt="Yi Zhang" width="300"
-                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Yi Zhang</h5><span class="small text-muted">CEO & Co-Founder</span>
-              <ul class="mb-0 list-inline mt-3 ">
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/ponyai.png" alt="pony ai">
-                </li>
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/Dexterity.png" alt="Dexterity">
-                </li>
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/baml.png" alt="bank of america merrill lynch">
-                </li>
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/hbs.png" alt="Harvard Business School">
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-6 col-sm-6 mb-4 ">
-            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="image/avatar/pasquale.jpg"
-                alt="Pasquale Antonante" width="300" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Pasquale Antonante</h5><span class="small text-muted">CTO & Co-Founder</span>
-              <ul class="mb-0 list-inline mt-3 ">
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/nvidia.png" alt="nvidia">
-                </li>
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/CollinsAerospace.png" alt="Collins Aerospace">
-                </li>
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/a17.png" alt="area 17">
-                </li>
-                <li class="list-inline-item affiliation">
-                  <img src="image/logo/mit_logo.png" alt="MIT">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Footer Area-->
-    <footer class="footer-area-l-17 position-relative">
-      <div class="footer-shape">
-        <img src="image/l8/footer-shape.svg" alt="">
-      </div>
-      <h6 class="text-muted align-items-center">© 2023 SafeGenie. All rights reserved.</h6>
-    </footer>
   </div>
-  <!-- Vendor Scripts -->
-  <script src="js/vendor.min.js"></script>
-  <!-- Plugin's Scripts -->
-  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="./plugins/aos/aos.min.js"></script>
-  <!-- <script src="./plugins/menu/menu.js"></script> -->
-  <!-- Activation Script -->
-  <script src="js/custom.js"></script>
+  <!-- End Sponsors-->
+
+  <!-- ====== Team Section Start -->
+  <section id="team" class="pt-4 pb-10 lg:pt-[120px] lg:pb-20">
+    <div class="container">
+      <div class="-mx-4 flex flex-wrap">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-[60px] max-w-[620px] text-center">
+            <span class="mb-2 block text-lg font-semibold text-primary">
+              Our Team
+            </span>
+            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]">
+              Expert team on AI-based Safety Systems
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="-mx-4 flex flex-wrap justify-center">
+        <!-- Yi Zhang -->
+        <div class="w-full px-4 sm:w-1 lg:w-1/3">
+          <div class="wow fadeInUp mb-10" data-wow-delay=".1s">
+            <div class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full">
+              <img src="assets/images/team/yi.jpg" alt="image" class="w-full rounded-full" />
+              <span class="absolute top-0 left-0 z-[-1]">
+                <img src="assets/icons/circle.svg" />
+              </span>
+              <span class="absolute right-0 bottom-0">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.5 21.5L0.505701 21.5C0.767606 10.023 10.023 0.767604 21.5 0.505697L21.5 21.5Z"
+                    stroke="#13C296" />
+                </svg>
+              </span>
+            </div>
+            <div class="text-center">
+              <h4 class="mb-2 text-lg font-medium text-dark">
+                Yi Zhang
+              </h4>
+              <p class="mb-5 text-sm font-medium text-body-color">
+                CEO & Co-Founder
+              </p>
+              <div class="flex items-center justify-center">
+                <a href="https://pony.ai" class="mx-2 flex items-center justify-center">
+                  <img src="assets/images/brands/ponyai.png">
+                </a>
+                <a href="https://www.dexterity.ai" class="mx-2 flex items-center justify-center">
+                  <img src="assets/images/brands/Dexterity.png">
+                </a>
+                <a href="javascript:void(0)" class="mx-2 flex items-center justify-center">
+                  <img src="assets/images/brands/baml.png">
+                </a>
+                <a href="www.hbs.edu" class="mx-2 flex items-center justify-center">
+                  <img src="assets/images/brands/hbs.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Yi Zhang -->
+        <!-- Pasquale Antonante -->
+        <div class="w-full px-4 sm:w-1 lg:w-1/3">
+          <div class="wow fadeInUp mb-10" data-wow-delay=".15s">
+            <div class="h-170px] relative z-10 mx-auto mb-6 w-[170px] rounded-full">
+              <img src="assets/images/team/pasquale.jpg" alt="image" class="w-full rounded-full" />
+              <span class="absolute top-0 left-0 z-[-1]">
+                <img src="assets/icons/circle.svg" />
+              </span>
+              <span class="absolute right-0 bottom-0">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.5 21.5L0.505701 21.5C0.767606 10.023 10.023 0.767604 21.5 0.505697L21.5 21.5Z"
+                    stroke="#13C296" />
+                </svg>
+              </span>
+            </div>
+            <div class="text-center">
+              <h4 class="mb-2 text-lg font-medium text-dark">Pasquale Antonante</h4>
+              <p class="mb-5 text-sm font-medium text-body-color">
+                CTO & Co-Founder
+              </p>
+              <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center">
+                  <a href="https://www.nvidia.com/" class="mx-2 flex items-center justify-center">
+                    <img src="assets/images/brands/nvidia.png">
+                  </a>
+                  <a href="https://www.collinsaerospace.com" class="mx-2 flex items-center justify-center">
+                    <img src="assets/images/brands/CollinsAerospace.png">
+                  </a>
+                  <a href="javascript:void(0)" class="mx-2 flex items-center justify-center">
+                    <img src="assets/images/brands/a17.png">
+                  </a>
+                  <a href="www.mit.edu" class="mx-2 flex items-center justify-center">
+                    <img src="assets/images/brands/mit_logo.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Pasquale Antonante -->
+      </div>
+    </div>
+  </section>
+  <!-- ====== Team Section End -->
+
+  <!-- ====== Footer Section Start -->
+  <footer class="wow fadeInUp z-10 bg-black " data-wow-delay=".15s">
+    <div class="mt-12 border-t border-opacity-40 py-8 lg:mt-[60px]">
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 md:w-2/3 lg:w-1/2">
+            <div class="my-1">
+              <div class="-mx-3 flex items-center justify-center md:justify-start">
+                <a href="javascript:void(0)" class="px-3 text-base text-[#f3f4fe] hover:text-primary">
+                  Privacy policy
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/3 lg:w-1/2">
+            <div class="my-1 flex justify-center md:justify-end">
+              <p class="text-base text-[#f3f4fe]">
+                &copy; 2023 SafeGenie. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+
+  <!-- ====== Back To Top Start -->
+  <a href="javascript:void(0)"
+    class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark">
+    <span class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"></span>
+  </a>
+  <!-- ====== Back To Top End -->
+
+  <!-- ====== All Scripts -->
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+      });
+    });
+
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (
+          refElement.offsetTop <= scrollTopMinus &&
+          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+        ) {
+          document
+            .querySelector(".ud-menu-scroll")
+            .classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
+
+    window.document.addEventListener("scroll", onScroll);
+  </script>
 </body>
 
 </html>
